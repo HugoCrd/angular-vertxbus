@@ -64,7 +64,7 @@ angular.module('app', ['knalli.angular-vertxbus'])
 ### Consume messages
 
 ```javascript
-vertxEventBusService.on('myaddress', function(err, message) {
+vertxEventBusService.on('myaddress', function(message, replyTo) {
   console.log('Received a message: ', message);
 });
 ```
